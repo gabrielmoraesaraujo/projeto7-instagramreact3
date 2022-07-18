@@ -17,26 +17,34 @@ function Story(props){
 
 function CarregarStories(){
     const stories = [
-        { image: "assets/img/9gag.svg", usuario: "9gag"},
-        { image: "assets/img/9gag.svg", usuario: "9gag"},
-        { image: "assets/img/9gag.svg", usuario: "9gag"},
-        { image: "assets/img/9gag.svg", usuario: "9gag"},
-        { image: "assets/img/9gag.svg", usuario: "9gag"},
-        { image: "assets/img/9gag.svg", usuario: "9gag"},
-        { image: "assets/img/9gag.svg", usuario: "9gag"},
-        { image: "assets/img/9gag.svg", usuario: "9gag"},
-        { image: "assets/img/9gag.svg", usuario: "9gag"}
+        { image: "assets/img/respondeai.svg", usuario: "9gag"},
+        { image: "assets/img/adorable_animals.svg", usuario: "adorable_animals"},
+        { image: "assets/img/bad.vibes.memes.svg", usuario: "bad.vibes.memes"},
+        { image: "assets/img/barked.svg", usuario: "barked"},
+        { image: "assets/img/catanacomics.svg", usuario: "catanacomics"},
+        { image: "assets/img/memeriagourmet.svg", usuario: "memeriagourmet"},
+        { image: "assets/img/meowed.svg", usuario: "meowed"},
+        { image: "assets/img/respondeai.svg", usuario: "respondeai"},
+        { image: "assets/img/wawawicomics.svg", usuario: "wawawicomics"}
         
     ];
 
     return stories;
+
+}
+
+function CarregarPosts(){
+    const posts = [
+        
+    ]
 }
 
 
 
-export default function Corpo(){
 
-    const stories = CarregarStories();
+
+export default function Corpo(){
+    const stories = CarregarStories();   
    
 
     return(
@@ -45,8 +53,15 @@ export default function Corpo(){
              <div class="esquerda">
                  <div class="stories">
                     {stories.map(story => <Story image={story.image} usuario={story.usuario}/>)}
-            
+                 
+                    <div class="setinha">
+                      <ion-icon name="chevron-forward-circle"></ion-icon>
+                    </div>
                  </div>
+
+
+                
+                 
              </div>
         </div>
 
