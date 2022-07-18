@@ -1,6 +1,6 @@
-
 import Corpo from "./Corpo";
 import Navbar from "./Navbar";
+import FundoMobile from "./FundoMobile";
 
 export default function App(){
 
@@ -8,6 +8,7 @@ export default function App(){
         <div>
             <Navbar />
             <Corpo />
+            <FundoMobile />
             
         </div>
     );  
