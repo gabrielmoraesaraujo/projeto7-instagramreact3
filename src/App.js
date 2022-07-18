@@ -8,5 +8,5 @@ export default function App(){
             <Navbar />
             <Corpo />
         </div>
-    );
+    );  
 }
